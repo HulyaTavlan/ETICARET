@@ -1,0 +1,114 @@
+﻿@model WebAppEF.Entities.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discounted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discounted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountRatio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountRatio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaxRatio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaxRatio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturedImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturedImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deleted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
